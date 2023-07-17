@@ -1,0 +1,26 @@
+/* Estilos neumorphism (Start) */
+
+.banner_neumorphism {
+  border-radius: 20px;
+  background: #dde1e7;
+  width: 90%;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+.section_neumorphism {
+  border-radius: 20px;
+  width: 90%;
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+.list_neumorphism {
+  padding-bottom: 1rem;
+}
+
+.list_neumorphism li {
+  font-size: large;
+}
+
+/* Estilos neumorphism (End) */
