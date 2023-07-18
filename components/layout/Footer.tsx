@@ -1,10 +1,9 @@
 import Link from "next/link";
-import styles from "../../styles/layout/layout.module.css";
 
-export default function Footer() {
+export default function Footer({ style }: { style: Record<string, string> }) {
   return (
-    <footer className={`${styles.footer} container-fluid`}>
-      <div className={`${styles.header_footer}`}>
+    <footer className={`${style.footer} container-fluid`}>
+      <div className={`${style.header_footer}`}>
         <div>Desarrollo web</div>
         <div>ICONOS</div>
       </div>

@@ -1,13 +1,15 @@
+import { useStyle } from "@/src/context/styleContext";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import styles from "../../styles/layout/layout.module.css";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+  const style = useStyle()?.style;
+
   return (
     <>
-      <Navbar />
-      <main className={styles.main}>{children}</main>
-      <Footer />
+      <Navbar style={style} />
+      <main className={style.main}>{children}</main>
+      <Footer style={style} />
     </>
   );
 }

@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
-import styles from "../../styles/layout/layout.module.css";
 import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 
-export default function Navbar() {
+export default function Navbar({ style }: { style: Record<string, string> }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const changeIsOpen = () => {
@@ -11,34 +10,32 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.brand_container}>
+    <nav className={style.navbar}>
+      <div className={style.brand_container}>
         <AiOutlineHome /> <span style={{ marginLeft: "7px" }}>Inicio</span>
       </div>
 
       <span
         onClick={changeIsOpen}
-        className={`${styles.icon} ${isOpen ? styles.icon_open : ""}`}
+        className={`${style.icon} ${isOpen ? style.icon_open : ""}`}
       >
         <AiOutlineMenu />
       </span>
       <ul
-        className={`${styles.navbar_items} ${
-          isOpen
-            ? `${styles.navbar_items_open}`
-            : `${styles.navbar_items_close}`
+        className={`${style.navbar_items} ${
+          isOpen ? `${style.navbar_items_open}` : `${style.navbar_items_close}`
         }`}
       >
-        <li className="ms-3">
+        <li className="ps-3">
           <a href="#">Componentes</a>
         </li>
-        <li className="ms-3">
+        <li className="ps-3">
           <a href="#">Cards</a>
         </li>
-        <li className="ms-3">
+        <li className="ps-3">
           <a href="#">Banners</a>
         </li>
-        <li className="ms-3">
+        <li className="ps-3">
           <a href="#">Mas disenos</a>
         </li>
       </ul>
