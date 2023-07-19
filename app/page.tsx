@@ -1,8 +1,10 @@
 "use client";
 import BannerStyleOne from "@/components/Banners/BannerStyleOne";
+import ScrollHorizontal from "@/components/ScrollHorizontal/ScrollHorizontal";
+import ScrollItem from "@/components/ScrollHorizontal/ScrollItem";
 import SectionsMenu from "@/components/SectionsMenu/SectionsMenu";
+import CheckRadio from "@/components/checks/CheckRadio";
 import Layout from "@/components/layout/Layout";
-import { useStyle } from "@/src/context/styleContext";
 import { menuItems } from "@/src/interfaces/menuItems.interface";
 
 export default function page() {
@@ -29,6 +31,29 @@ export default function page() {
     <Layout>
       <BannerStyleOne info={info} />
       <SectionsMenu menuItems={menuItems} />
+      <ScrollHorizontal title={"Recently Added:"}>
+        <ScrollItem
+          name="Theme Changed"
+          author="JorgeMike"
+          source="@CSScoder"
+          location="cards"
+          component={<CheckRadio />}
+        />
+        <ScrollItem
+          name="Theme Changed"
+          author="JorgeMike"
+          source="@CSScoder"
+          location="cards"
+          component={<CheckRadio />}
+        />
+        <ScrollItem
+          name="Theme Changed"
+          author="JorgeMike"
+          source="@CSScoder"
+          location="cards"
+          component={<CheckRadio />}
+        />
+      </ScrollHorizontal>
     </Layout>
   );
 }

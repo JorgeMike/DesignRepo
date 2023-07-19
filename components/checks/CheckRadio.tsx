@@ -11,7 +11,7 @@ export default function CheckRadio() {
   };
 
   return (
-    <div className={`${style.external_section} container mt-4`}>
+    <div className={`${style.external_section} container`}>
       <h4 className={`${style.title} pt-3 ps-3`}>Informacion de contacto:</h4>
       <div className={`pb-3 ${style.text}`}>
         <div className="d-flex mx-5">
