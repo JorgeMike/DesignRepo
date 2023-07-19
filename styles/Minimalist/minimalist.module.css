@@ -1,19 +1,18 @@
-/* Estilos neumorphism (Start) */
+/* Estilos Minimalist (Start) */
 
 /* Navbar (Start) */
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  background: #1d1d1d;
+  background: #ffffff;
+  border-bottom: #dedede solid 1px;
   align-items: center;
   position: relative;
-  color: #ffffff;
 }
 
 .brand_container {
   display: inline;
-  color: #ffffff;
 }
 
 .icon {
@@ -38,10 +37,16 @@
 .navbar_items li a {
   display: inline-block;
   padding: 10px 0px;
+  margin-bottom: 1px;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   width: 100%;
 }
+
+.navbar_items li a:hover {
+  border-bottom: 1px solid #000000;
+}
+
 
 .navbar_items li:last-child {
   margin-right: 2rem;
@@ -67,7 +72,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    background: #1d1d1d;
+    background: #ffffff;
     top: 45px;
     height: fit-content;
     overflow-y: hidden;
@@ -76,7 +81,7 @@
 
   .navbar_items_open li:hover {
     cursor: pointer;
-    background: #252525;
+    background: #f5f5f5;
   }
 
   @keyframes fadeIn {
@@ -94,7 +99,7 @@
     display: block; /* Agregado */
     position: absolute;
     width: 100%;
-    background: #1d1d1d;
+    background: #ffffff;
     top: 45px;
     animation: fadeOut 0.3s forwards;
     pointer-events: none;
@@ -117,12 +122,7 @@
 /* Main (Start) */
 
 .main {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgb(29, 29, 29) 100%
-  );
+  background: #ffffff;
   padding-top: 1rem;
   padding-bottom: 1rem;
   min-height: 81vh;
@@ -133,11 +133,10 @@
 /* Footer (Start) */
 
 .footer {
-  background: #000000;
+  background: #ffffff;
   margin-top: auto;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  color: #ffffff;
 }
 
 .header_footer {
@@ -168,35 +167,22 @@
 }
 
 .footer div div ul a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 /* Footer (End) */
 
 .external_section {
-  border-radius: 5px;
-  background: #1d1d1d;
+  background: #ffffff;
   width: 90%;
-}
-
-.title {
-  color: #ffffff;
-}
-
-.subtitle {
-  color: #ffffff;
-}
-
-.text {
-  color: #ffffff;
+  border-bottom: 1px solid #dedede;
 }
 
 .inner_section {
-  border-radius: 5px;
   width: 90%;
-  background: #1d1d1d;
-  color: #ffffff;
+  background: #ffffff;
+  border-bottom: 1px solid #dedede;
 }
 
 .list {
@@ -207,4 +193,17 @@
   font-size: large;
 }
 
-/* Estilos neumorphism (End) */
+.title {
+  font-weight: bold;
+  color: #000000;
+}
+
+.subtitle {
+  color: #000000;
+}
+
+.text {
+  color: #000000;
+}
+
+/* Estilos minimalist (End) */

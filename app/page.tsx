@@ -1,18 +1,34 @@
 "use client";
-import Curriculum from "@/components/cv/Curriculum";
+import BannerStyleOne from "@/components/Banners/BannerStyleOne";
+import SectionsMenu from "@/components/SectionsMenu/SectionsMenu";
 import Layout from "@/components/layout/Layout";
-import neumorphism from "../styles/Neumorphism/neumorphism.module.css";
-import minimalist from "../styles/Minimalist/minimalist.module.css";
-import CheckRadio from "@/components/checks/CheckRadio";
-import { useState } from "react";
 import { useStyle } from "@/src/context/styleContext";
+import { menuItems } from "@/src/interfaces/menuItems.interface";
 
 export default function page() {
+  const info = {
+    title: "Repositorio de diseños",
+    subTitle: "by: JorgeMike",
+  };
+  const menuItems: menuItems[] = [
+    { title: "Cards", route: "cards" },
+    { title: "Buttons", route: "buttons" },
+    { title: "Banners", route: "banners" },
+    { title: "NavBars", route: "navbars" },
+    { title: "Footers", route: "footers" },
+    { title: "Color palettes", route: "color_palettes" },
+    { title: "Tables", route: "tables" },
+    { title: "Images", route: "images" },
+    { title: "Animations", route: "animations" },
+    { title: "Carousels", route: "carousels" },
+    { title: "LogIn/Registers", route: "login_registers" },
+    { title: "Forms ", route: "forms" },
+  ];
 
   return (
     <Layout>
-      <Curriculum />
-      <CheckRadio />
+      <BannerStyleOne info={info} />
+      <SectionsMenu menuItems={menuItems} />
     </Layout>
   );
 }

@@ -2,6 +2,7 @@
 import { createContext, useContext, useState } from "react";
 import neumorphism from "../../styles/Neumorphism/neumorphism.module.css";
 import dark from "../../styles/Dark/dark.module.css";
+import minimalist from "../../styles/Minimalist/minimalist.module.css";
 
 type StyleContextType = {
   style: Record<string, string>;
@@ -24,10 +25,12 @@ export const StyleProvider = ({ children }: { children: React.ReactNode }) => {
   const onChangeStyle = (style: string) => {
     if (style == "neumorphism") {
       setStyle(neumorphism);
-    } else {
-      if (style == "dark") {
-        setStyle(dark);
-      }
+    }
+    if (style == "dark") {
+      setStyle(dark);
+    }
+    if (style == "minimalist") {
+      setStyle(minimalist);
     }
   };
 

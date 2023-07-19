@@ -1,5 +1,3 @@
-import neumorphism from "../../styles/Neumorphism/neumorphism.module.css";
-import minimalist from "../../styles/Minimalist/minimalist.module.css";
 import { ChangeEvent } from "react";
 import { useStyle } from "@/src/context/styleContext";
 
@@ -30,7 +28,7 @@ export default function CheckRadio() {
               Neumorphism
             </label>
           </div>
-          <div className="form-check">
+          <div className="form-check me-3">
             <input
               className="form-check-input"
               type="radio"
@@ -41,6 +39,19 @@ export default function CheckRadio() {
             />
             <label className="form-check-label" htmlFor="dark">
               Dark
+            </label>
+          </div>
+          <div className="form-check me-3">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="exampleRadios"
+              id="minimalist"
+              value="minimalist"
+              onChange={onChangeSetStyle}
+            />
+            <label className="form-check-label" htmlFor="minimalist">
+              Minimalist
             </label>
           </div>
         </div>

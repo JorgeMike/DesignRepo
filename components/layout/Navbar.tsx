@@ -1,4 +1,6 @@
 "use client";
+import { menuItems } from "@/src/interfaces/menuItems.interface";
+import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 
@@ -9,10 +11,16 @@ export default function Navbar({ style }: { style: Record<string, string> }) {
     setIsOpen(!isOpen);
   };
 
+  const navbarItems: menuItems[] = [
+    { title: "Documentacion", route: "documentation" },
+    { title: "Info", route: "info" },
+    { title: "Version", route: "version" },
+  ];
+
   return (
     <nav className={style.navbar}>
       <div className={style.brand_container}>
-        <AiOutlineHome /> <span style={{ marginLeft: "7px" }}>Inicio</span>
+        <AiOutlineHome />
       </div>
 
       <span
@@ -26,18 +34,11 @@ export default function Navbar({ style }: { style: Record<string, string> }) {
           isOpen ? `${style.navbar_items_open}` : `${style.navbar_items_close}`
         }`}
       >
-        <li className="ps-3">
-          <a href="#">Componentes</a>
-        </li>
-        <li className="ps-3">
-          <a href="#">Cards</a>
-        </li>
-        <li className="ps-3">
-          <a href="#">Banners</a>
-        </li>
-        <li className="ps-3">
-          <a href="#">Mas disenos</a>
-        </li>
+        {navbarItems.map((item, index) => (
+          <li className="ps-3" key={index}>
+            <Link href={item.route}>{item.title}</Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
