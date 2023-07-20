@@ -1,0 +1,210 @@
+/* Estilos neumorphism (Start) */
+
+/* Navbar (Start) */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #1d1d1d;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.brand_container {
+  display: inline;
+  color: #ffffff;
+}
+
+.icon {
+  display: none;
+  padding: 10px 10px;
+}
+
+.navbar_items_open {
+  display: none;
+}
+
+.navbar_items {
+  list-style: none;
+  display: inline-flex;
+  column-gap: 20px;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_items li a {
+  display: inline-block;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+}
+
+.navbar_items li:last-child {
+  margin-right: 2rem;
+}
+
+.navbar div:first-child {
+  margin-left: 2rem;
+}
+
+@media (max-width: 600px) {
+  .navbar_items {
+    display: none;
+    padding: 0;
+  }
+
+  .icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+
+  .navbar_items_open {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #1d1d1d;
+    top: 45px;
+    height: fit-content;
+    overflow-y: hidden;
+    animation: fadeIn 0.3s forwards;
+  }
+
+  .navbar_items_open li:hover {
+    cursor: pointer;
+    background: #252525;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .navbar_items_close {
+    display: block; /* Agregado */
+    position: absolute;
+    width: 100%;
+    background: #1d1d1d;
+    top: 45px;
+    animation: fadeOut 0.3s forwards;
+    pointer-events: none;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Navbar (End) */
+
+/* Main (Start) */
+
+.main {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(29, 29, 29) 100%
+  );
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 81vh;
+}
+
+/* Main (End) */
+
+/* Footer (Start) */
+
+.footer {
+  background: #000000;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  color: #ffffff;
+}
+
+.header_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_footer div:first-child {
+  margin-left: 1rem;
+}
+
+.header_footer div:last-child {
+  margin-right: 1rem;
+}
+
+.footer div div {
+  text-align: center;
+}
+
+.title_section_footer {
+  font-size: medium;
+}
+
+.footer div div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer div div ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Footer (End) */
+
+.external_section {
+  border-radius: 5px;
+  background: #1d1d1d;
+  width: 90%;
+}
+
+.title {
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #ffffff;
+}
+
+.text {
+  color: #ffffff;
+}
+
+.inner_section {
+  border-radius: 5px;
+  width: 90%;
+  background: #1d1d1d;
+  color: #ffffff;
+}
+
+.list {
+  padding-bottom: 1rem;
+}
+
+.list li {
+  font-size: large;
+}
+
+/* Estilos neumorphism (End) */
