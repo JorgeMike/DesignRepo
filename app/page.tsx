@@ -9,7 +9,7 @@ import { recentlyAdded } from "../src/arrays/recentlyAdded/recentlyAddedArray";
 
 export default function page() {
   const info = {
-    title: "Repositorio de diseños",
+    title: "Design repository",
     subTitle: "by: JorgeMike",
   };
   const menuItems: menuItems[] = [
