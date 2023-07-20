@@ -410,14 +410,35 @@
   }
 }
 
-/* Media Querys (End)*/
-
-.component_info {
-  margin-left: 2rem;
+@media (max-width: 1200px) {
+  .component_info_db {
+    justify-content: center;
+  }
 }
+
+/* Media Querys (End)*/
 
 .component_container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component_tags {
+  width: 100%;
+}
+
+.component_tags span {
+  display: inline-block;
+  margin: 5px;
+  background: #c5cacf;
+  border-radius: 10px;
+  padding: .2rem 1rem;
+}
+
+.component_main_info{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

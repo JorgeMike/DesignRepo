@@ -3,9 +3,9 @@ import BannerStyleOne from "@/components/Banners/BannerStyleOne";
 import ScrollHorizontal from "@/components/ScrollHorizontal/ScrollHorizontal";
 import ScrollItem from "@/components/ScrollHorizontal/ScrollItem";
 import SectionsMenu from "@/components/SectionsMenu/SectionsMenu";
-import CheckRadio from "@/components/checks/CheckRadio";
 import Layout from "@/components/layout/Layout";
 import { menuItems } from "@/src/interfaces/menuItems.interface";
+import { recentlyAdded } from "../src/arrays/recentlyAdded/recentlyAddedArray";
 
 export default function page() {
   const info = {
@@ -32,27 +32,9 @@ export default function page() {
       <BannerStyleOne info={info} />
       <SectionsMenu menuItems={menuItems} />
       <ScrollHorizontal title={"Recently Added:"}>
-        <ScrollItem
-          name="Theme Changed"
-          author="JorgeMike"
-          source="@CSScoder"
-          location="cards"
-          component={<CheckRadio />}
-        />
-        <ScrollItem
-          name="Theme Changed"
-          author="JorgeMike"
-          source="@CSScoder"
-          location="cards"
-          component={<CheckRadio />}
-        />
-        <ScrollItem
-          name="Theme Changed"
-          author="JorgeMike"
-          source="@CSScoder"
-          location="cards"
-          component={<CheckRadio />}
-        />
+        {recentlyAdded.map((item, index) => (
+          <ScrollItem info={item} key={index} />
+        ))}
       </ScrollHorizontal>
     </Layout>
   );

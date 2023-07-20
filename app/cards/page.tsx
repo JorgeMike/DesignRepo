@@ -1,21 +1,15 @@
-"use client";
 import Layout from "@/components/layout/Layout";
 import Dashboard from "@/components/layout/Dashboard";
-import { useStyle } from "@/src/context/styleContext";
-import CardOne from "@/components/Cards/CardOne";
-import CardTwo from "@/components/Cards/CardTwo";
+import ComponentCounter from "@/components/ComponentCounter/ComponentCounter";
+import { cards } from "../../src/arrays/cards/cardsArray";
 
 export default function Page() {
-  const { style } = useStyle();
   return (
     <Layout>
       <Dashboard>
-        <div className={`col-xl-6 py-3 ${style.component_container}`}>
-          <CardOne />
-        </div>
-        <div className={`col-xl-6 py-3 ${style.component_container}`}>
-          <CardTwo />
-        </div>
+        {cards.map((item, index) => (
+          <ComponentCounter info={item} key={index} />
+        ))}
       </Dashboard>
     </Layout>
   );
