@@ -1,3 +1,4 @@
+'use client'
 import { useStyle } from "@/src/context/styleContext";
 import Footer from "./Footer";
 import Navbar from "./Navbar";

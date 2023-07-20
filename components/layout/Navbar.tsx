@@ -20,7 +20,9 @@ export default function Navbar({ style }: { style: Record<string, string> }) {
   return (
     <nav className={style.navbar}>
       <div className={style.brand_container}>
-        <AiOutlineHome />
+        <Link href={"/"}>
+          <AiOutlineHome />
+        </Link>
       </div>
 
       <span
