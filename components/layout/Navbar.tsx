@@ -21,7 +21,7 @@ export default function Navbar({ style }: { style: Record<string, string> }) {
     <nav className={style.navbar}>
       <div className={style.brand_container}>
         <Link href={"/"}>
-          <AiOutlineHome />
+          <AiOutlineHome size={20}/>
         </Link>
       </div>
 
@@ -37,7 +37,7 @@ export default function Navbar({ style }: { style: Record<string, string> }) {
         }`}
       >
         {navbarItems.map((item, index) => (
-          <li className="ps-3" key={index}>
+          <li className="ps-3 py-1" key={index}>
             <Link href={item.route}>{item.title}</Link>
           </li>
         ))}

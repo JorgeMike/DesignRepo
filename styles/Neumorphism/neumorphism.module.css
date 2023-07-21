@@ -158,7 +158,14 @@
 
 .scroll_x {
   overflow-x: scroll;
-  white-space: nowrap;
+}
+
+.scroll_item{
+  margin: 0 1rem;
+  border: 1px solid #bfc3c8;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 1rem;
 }
 
 .content_scroll_x {
@@ -441,4 +448,5 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
