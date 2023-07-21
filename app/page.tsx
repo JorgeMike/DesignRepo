@@ -23,7 +23,7 @@ export default function page() {
     { title: "Images", route: "images" },
     { title: "Animations", route: "animations" },
     { title: "Carousels", route: "carousels" },
-    { title: "LogIn/Registers", route: "login_registers" },
+    { title: "Log In", route: "login" },
     { title: "Forms ", route: "forms" },
   ];
 
@@ -32,7 +32,7 @@ export default function page() {
       <BannerStyleOne info={info} />
       <SectionsMenu menuItems={menuItems} />
       <ScrollHorizontal title={"Recently Added:"}>
-        {recentlyAdded.map((item, index) => (
+        {recentlyAdded.reverse().map((item, index) => (
           <ScrollItem info={item} key={index} />
         ))}
       </ScrollHorizontal>
