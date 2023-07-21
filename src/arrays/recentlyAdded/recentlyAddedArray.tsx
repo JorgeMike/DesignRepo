@@ -1,3 +1,7 @@
+import ButtonOne from "@/components/Buttons/ButtonOne";
+import ButtonTwo from "@/components/Buttons/ButtonTwo";
+import CardFive from "@/components/Cards/CardFive";
+import CardFour from "@/components/Cards/CardFour";
 import CardOne from "@/components/Cards/CardOne";
 import CardThree from "@/components/Cards/CardThree";
 import CardTwo from "@/components/Cards/CardTwo";
@@ -27,6 +31,38 @@ export const recentlyAdded: componentInfo[] = [
     location: "/components/Cards/CardThree.tsx",
     source: "https://codepen.io/jh3y/pen/NWMGxdL?editors=1100",
     component: <CardThree />,
-    tags: ["hover effect", "pointed", "blur"],
+    tags: ["hover effect", "pointed", "blur", "responsive"],
+  },
+  {
+    name: "Card 4",
+    author: "JorgeMike",
+    location: "/components/Cards/CardFour.tsx",
+    source: "https://codepen.io/marcell0lopes/pen/YzLKxpR",
+    component: <CardFour />,
+    tags: ["rounded", "blur", "glass effect", "with buttons"],
+  },
+  {
+    name: "Card 5",
+    author: "JorgeMike",
+    location: "/components/Cards/CardFour.tsx",
+    source: "https://codepen.io/jepooley/pen/NWYryap",
+    component: <CardFive />,
+    tags: ["hover effect", "fade", "glass effect", "informative"],
+  },
+  {
+    name: "Button 1",
+    author: "JorgeMike",
+    location: "/components/Cards/CardFour.tsx",
+    source: "https://codepen.io/jepooley/pen/NWYryap",
+    component: <ButtonOne />,
+    tags: ["hover effect", "fade", "glass effect", "informative"],
+  },
+  {
+    name: "Button 2",
+    author: "JorgeMike",
+    location: "/components/Cards/CardFour.tsx",
+    source: "https://codepen.io/jepooley/pen/NWYryap",
+    component: <ButtonTwo />,
+    tags: ["hover effect", "fade", "glass effect", "informative"],
   },
 ];
