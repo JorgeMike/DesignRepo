@@ -12,16 +12,16 @@ export default function Navbar({ style }: { style: Record<string, string> }) {
   };
 
   const navbarItems: menuItems[] = [
-    { title: "Documentacion", route: "documentation" },
-    { title: "Info", route: "info" },
-    { title: "Version", route: "version" },
+    { title: "Documentacion", route: "documentation", icon: <AiOutlineHome /> },
+    { title: "Info", route: "info", icon: <AiOutlineHome /> },
+    { title: "Version", route: "version", icon: <AiOutlineHome /> },
   ];
 
   return (
     <nav className={style.navbar}>
       <div className={style.brand_container}>
-        <Link href={"/"}>
-          <AiOutlineHome size={20}/>
+        <Link href={""}>
+          <AiOutlineHome size={20} />
         </Link>
       </div>
 

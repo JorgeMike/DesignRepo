@@ -1,3 +1,4 @@
+import BannerOne from "@/components/Banners/BannerOne";
 import ButtonOne from "@/components/Buttons/ButtonOne";
 import ButtonTwo from "@/components/Buttons/ButtonTwo";
 import CardFive from "@/components/Cards/CardFive";
@@ -52,7 +53,7 @@ export const recentlyAdded: componentInfo[] = [
   {
     name: "Button 1",
     author: "JorgeMike",
-    location: "/components/Cards/CardFour.tsx",
+    location: "/components/Button/ButtonOne.tsx",
     source: "https://codepen.io/jepooley/pen/NWYryap",
     component: <ButtonOne />,
     tags: ["hover effect", "fade", "glass effect", "informative"],
@@ -60,9 +61,17 @@ export const recentlyAdded: componentInfo[] = [
   {
     name: "Button 2",
     author: "JorgeMike",
-    location: "/components/Cards/CardFour.tsx",
-    source: "https://codepen.io/jepooley/pen/NWYryap",
+    location: "/components/Button/ButtonTwo.tsx",
+    source: "https://codepen.io/katarzynamarta/pen/rNdbbVq",
     component: <ButtonTwo />,
+    tags: ["hover effect", "fade", "glass effect", "informative"],
+  },
+  {
+    name: "Banner 1",
+    author: "JorgeMike",
+    location: "/components/Banners/BannerOne.tsx",
+    source: "https://codepen.io/Amayzin/pen/xemJEX?editors=1100",
+    component: <BannerOne />,
     tags: ["hover effect", "fade", "glass effect", "informative"],
   },
 ];

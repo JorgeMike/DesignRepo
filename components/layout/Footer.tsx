@@ -5,7 +5,7 @@ export default function Footer({ style }: { style: Record<string, string> }) {
     <footer className={`${style.footer} container-fluid`}>
       <div className={`${style.header_footer}`}>
         <h6>Repositorio de disenos</h6>
-        <h6>V 1.0.2</h6>
+        <h6>V 1.0.3</h6>
       </div>
       <div className={style.header_content}>
         <div className="d-flex h-100">
