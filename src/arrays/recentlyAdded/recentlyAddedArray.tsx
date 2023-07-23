@@ -7,6 +7,9 @@ import CardOne from "@/components/Cards/CardOne";
 import CardThree from "@/components/Cards/CardThree";
 import CardTwo from "@/components/Cards/CardTwo";
 import CheckRadio from "@/components/checks/CheckRadio";
+import NavbarOne from "@/components/navbars/NavbarOne";
+import NavbarThree from "@/components/navbars/NavbarThree";
+import NavbarTwo from "@/components/navbars/NavbarTwo";
 import { componentInfo } from "@/src/interfaces/componetInfo.interface";
 
 export const recentlyAdded: componentInfo[] = [
@@ -19,36 +22,12 @@ export const recentlyAdded: componentInfo[] = [
     tags: ["hover effect", "rounded", "decorative"],
   },
   {
-    name: "Card 2",
-    author: "JorgeMike",
-    location: "/components/Cards/CardTwo.tsx",
-    source: "https://codepen.io/choogoor/pen/RwBKZey",
-    component: <CardTwo />,
-    tags: ["hover effect", "pointed", "informative", "decorative"],
-  },
-  {
     name: "Card 3",
     author: "JorgeMike",
     location: "/components/Cards/CardThree.tsx",
     source: "https://codepen.io/jh3y/pen/NWMGxdL?editors=1100",
     component: <CardThree />,
     tags: ["hover effect", "pointed", "blur", "responsive"],
-  },
-  {
-    name: "Card 4",
-    author: "JorgeMike",
-    location: "/components/Cards/CardFour.tsx",
-    source: "https://codepen.io/marcell0lopes/pen/YzLKxpR",
-    component: <CardFour />,
-    tags: ["rounded", "blur", "glass effect", "with buttons"],
-  },
-  {
-    name: "Card 5",
-    author: "JorgeMike",
-    location: "/components/Cards/CardFour.tsx",
-    source: "https://codepen.io/jepooley/pen/NWYryap",
-    component: <CardFive />,
-    tags: ["hover effect", "fade", "glass effect", "informative"],
   },
   {
     name: "Button 1",
@@ -73,5 +52,29 @@ export const recentlyAdded: componentInfo[] = [
     source: "https://codepen.io/Amayzin/pen/xemJEX?editors=1100",
     component: <BannerOne />,
     tags: ["hover effect", "fade", "glass effect", "informative"],
+  },
+  {
+    author: "JorgeMike",
+    component: <NavbarOne />,
+    location: "/components/Banners/BannerOne.tsx",
+    name: "Navbar 1",
+    source: "https://codepen.io/RockStarwind/pen/WmGwwp",
+    tags: ["hover effect", "dark"],
+  },
+  {
+    author: "JorgeMike",
+    component: <NavbarTwo />,
+    location: "/components/Banners/BannerOne.tsx",
+    name: "Navbar 2",
+    source: "https://codepen.io/Patak/pen/QpLpOV/",
+    tags: ["hover effect", "dark", "color"],
+  },
+  {
+    author: "JorgeMike",
+    component: <NavbarThree />,
+    location: "/components/Banners/BannerOne.tsx",
+    name: "Navbar 3",
+    source: "https://codepen.io/kazzkiq/pen/qEMjaw/",
+    tags: ["hover effect", "dark", "color"],
   },
 ];
